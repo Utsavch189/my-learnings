@@ -1,0 +1,98 @@
+2024-09-15 20:29:49,849 - INFO - data is signed
+2024-09-15 20:29:49,851 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:29:49,860 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:29:49,861 - INFO - right data get!
+2024-09-15 20:29:52,865 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:29:52,870 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:29:52,871 - INFO - right data get!
+2024-09-15 20:30:20,917 - INFO - data is signed
+2024-09-15 20:30:20,920 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:20,924 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:20,924 - INFO - right data get!
+2024-09-15 20:30:23,929 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:23,933 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:23,934 - INFO - right data get!
+2024-09-15 20:30:26,938 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:26,942 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:26,943 - INFO - right data get!
+2024-09-15 20:30:29,947 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:29,952 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:29,953 - INFO - right data get!
+2024-09-15 20:30:32,957 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:32,963 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:32,964 - INFO - right data get!
+2024-09-15 20:30:35,968 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:35,974 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:35,975 - INFO - right data get!
+2024-09-15 20:30:38,980 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:38,987 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 400 50
+2024-09-15 20:30:38,988 - ERROR - signature verification failed!
+2024-09-15 20:30:41,990 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:41,995 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:41,997 - INFO - right data get!
+2024-09-15 20:30:44,999 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:45,004 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:45,005 - INFO - right data get!
+2024-09-15 20:30:48,010 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:48,016 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:48,016 - INFO - right data get!
+2024-09-15 20:30:51,023 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:51,030 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:51,031 - INFO - right data get!
+2024-09-15 20:30:54,037 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:54,044 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:54,044 - INFO - right data get!
+2024-09-15 20:30:57,048 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:30:57,052 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:30:57,053 - INFO - right data get!
+2024-09-15 20:31:00,058 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:00,062 - DEBUG - http://127.0.0.1:5000 "POST /api/data HTTP/11" 200 247
+2024-09-15 20:31:00,063 - INFO - right data get!
+2024-09-15 20:31:03,066 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:03,066 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791431f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:06,070 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:06,071 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bc790>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:09,075 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:09,076 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x717579143f40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:12,083 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:12,085 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x717579143df0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:15,092 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:15,094 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bd000>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:18,101 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:18,102 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bd870>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:21,108 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:21,110 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791be110>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:24,114 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:24,115 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x717579141db0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:27,118 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:27,119 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791be110>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:30,125 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:30,126 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bd870>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:33,130 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:33,132 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bcf40>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:36,136 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:36,137 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bcb50>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:39,144 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:39,146 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bea10>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:42,150 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:42,151 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x717579143ac0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:45,154 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:45,154 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791be800>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:48,157 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:48,158 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bc190>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:51,163 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:51,165 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bd1b0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:54,172 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:54,174 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bda80>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:31:57,181 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:31:57,183 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x717579142fe0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:32:00,187 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:32:00,190 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x717579143640>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:32:03,196 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:32:03,197 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bd690>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:32:06,202 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:32:06,203 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bc2e0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:32:09,208 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:32:09,208 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791bcdc0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2024-09-15 20:32:12,213 - DEBUG - Starting new HTTP connection (1): 127.0.0.1:5000
+2024-09-15 20:32:12,215 - ERROR - HTTPConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/data (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7175791be350>: Failed to establish a new connection: [Errno 111] Connection refused'))

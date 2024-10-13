@@ -1,0 +1,43 @@
+2024-09-15 20:29:29,600 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-09-15 20:29:29,600 - INFO - [33mPress CTRL+C to quit[0m
+2024-09-15 20:29:29,601 - INFO -  * Restarting with stat
+2024-09-15 20:29:29,876 - WARNING -  * Debugger is active!
+2024-09-15 20:29:29,877 - INFO -  * Debugger PIN: 503-811-852
+2024-09-15 20:29:46,967 - INFO -  * Detected change in '/home/utsav/Downloads/digital-sign/server/main.py', reloading
+2024-09-15 20:29:47,052 - INFO -  * Restarting with stat
+2024-09-15 20:29:47,381 - WARNING -  * Debugger is active!
+2024-09-15 20:29:47,382 - INFO -  * Debugger PIN: 503-811-852
+2024-09-15 20:29:49,859 - INFO - signature verification success! And was signed on 1726412389
+2024-09-15 20:29:49,860 - INFO - 127.0.0.1 - - [15/Sep/2024 20:29:49] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:29:52,868 - INFO - signature verification success! And was signed on 1726412389
+2024-09-15 20:29:52,869 - INFO - 127.0.0.1 - - [15/Sep/2024 20:29:52] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:20,922 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:20,923 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:20] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:23,932 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:23,933 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:23] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:26,941 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:26,942 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:26] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:29,950 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:29,951 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:29] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:32,961 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:32,962 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:32] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:35,972 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:35,973 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:35] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:38,985 - ERROR - verify | 
+2024-09-15 20:30:38,986 - ERROR - signature verification failed! And was signed on 1726412420
+2024-09-15 20:30:38,986 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:38] "[31m[1mPOST /api/data HTTP/1.1[0m" 400 -
+2024-09-15 20:30:41,993 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:41,995 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:41] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:45,002 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:45,003 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:45] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:48,014 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:48,015 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:48] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:51,028 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:51,029 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:51] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:54,042 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:54,043 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:54] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:30:57,050 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:30:57,051 - INFO - 127.0.0.1 - - [15/Sep/2024 20:30:57] "POST /api/data HTTP/1.1" 200 -
+2024-09-15 20:31:00,060 - INFO - signature verification success! And was signed on 1726412420
+2024-09-15 20:31:00,061 - INFO - 127.0.0.1 - - [15/Sep/2024 20:31:00] "POST /api/data HTTP/1.1" 200 -

@@ -1,0 +1,383 @@
+[2024-09-17 13:12:41 +0530] [61329] [INFO] Starting gunicorn 23.0.0
+[2024-09-17 13:13:38 +0530] [61389] [INFO] Starting gunicorn 23.0.0
+[2024-09-17 13:13:38 +0530] [61389] [INFO] Listening at: http://0.0.0.0:5000 (61389)
+[2024-09-17 13:13:38 +0530] [61389] [INFO] Using worker: sync
+[2024-09-17 13:13:38 +0530] [61390] [INFO] Booting worker with pid: 61390
+[2024-09-17 13:13:38 +0530] [61391] [INFO] Booting worker with pid: 61391
+[2024-09-17 13:13:38 +0530] [61392] [INFO] Booting worker with pid: 61392
+[2024-09-17 13:13:39 +0530] [61395] [INFO] Booting worker with pid: 61395
+[2024-09-17 13:14:21 +0530] [61389] [CRITICAL] WORKER TIMEOUT (pid:61390)
+[2024-09-17 13:14:21 +0530] [61390] [ERROR] Error handling request /complex-api
+Traceback (most recent call last):
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 12, in complex_api
+    time.sleep(10) # -- simulate time taken process
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-17 13:14:21 +0530] [61390] [INFO] Worker exiting (pid: 61390)
+[2024-09-17 13:14:21 +0530] [61432] [INFO] Booting worker with pid: 61432
+[2024-09-17 13:15:54 +0530] [61389] [INFO] Handling signal: int
+[2024-09-17 13:15:54 +0530] [61391] [INFO] Worker exiting (pid: 61391)
+[2024-09-17 13:15:54 +0530] [61392] [INFO] Worker exiting (pid: 61392)
+[2024-09-17 13:15:54 +0530] [61432] [INFO] Worker exiting (pid: 61432)
+[2024-09-17 13:15:54 +0530] [61395] [INFO] Worker exiting (pid: 61395)
+[2024-09-17 13:15:54 +0530] [61389] [INFO] Shutting down: Master
+[2024-09-17 13:16:22 +0530] [61488] [INFO] Starting gunicorn 23.0.0
+[2024-09-17 13:16:22 +0530] [61488] [INFO] Listening at: http://0.0.0.0:5000 (61488)
+[2024-09-17 13:16:22 +0530] [61488] [INFO] Using worker: sync
+[2024-09-17 13:16:22 +0530] [61489] [INFO] Booting worker with pid: 61489
+[2024-09-17 13:16:22 +0530] [61490] [INFO] Booting worker with pid: 61490
+[2024-09-17 13:16:22 +0530] [61491] [INFO] Booting worker with pid: 61491
+[2024-09-17 13:16:22 +0530] [61492] [INFO] Booting worker with pid: 61492
+[2024-09-17 13:17:01 +0530] [61488] [CRITICAL] WORKER TIMEOUT (pid:61490)
+[2024-09-17 13:17:01 +0530] [61490] [ERROR] Error handling request /complex-api
+Traceback (most recent call last):
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 12, in complex_api
+    time.sleep(10) # -- simulate time taken process
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-17 13:17:01 +0530] [61490] [INFO] Worker exiting (pid: 61490)
+[2024-09-17 13:17:01 +0530] [61518] [INFO] Booting worker with pid: 61518
+[2024-09-17 13:17:09 +0530] [61488] [CRITICAL] WORKER TIMEOUT (pid:61489)
+[2024-09-17 13:17:09 +0530] [61489] [ERROR] Error handling request /complex-api
+Traceback (most recent call last):
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 12, in complex_api
+    time.sleep(10) # -- simulate time taken process
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-17 13:17:09 +0530] [61489] [INFO] Worker exiting (pid: 61489)
+[2024-09-17 13:17:10 +0530] [61525] [INFO] Booting worker with pid: 61525
+[2024-09-17 13:17:21 +0530] [61488] [INFO] Handling signal: int
+[2024-09-17 13:17:21 +0530] [61491] [INFO] Worker exiting (pid: 61491)
+[2024-09-17 13:17:21 +0530] [61518] [INFO] Worker exiting (pid: 61518)
+[2024-09-17 13:17:21 +0530] [61492] [INFO] Worker exiting (pid: 61492)
+[2024-09-17 13:17:21 +0530] [61525] [INFO] Worker exiting (pid: 61525)
+[2024-09-17 13:17:21 +0530] [61488] [INFO] Shutting down: Master
+[2024-09-17 13:17:22 +0530] [61539] [INFO] Starting gunicorn 23.0.0
+[2024-09-17 13:17:22 +0530] [61539] [INFO] Listening at: http://0.0.0.0:5000 (61539)
+[2024-09-17 13:17:22 +0530] [61539] [INFO] Using worker: sync
+[2024-09-17 13:17:22 +0530] [61540] [INFO] Booting worker with pid: 61540
+[2024-09-17 13:17:22 +0530] [61541] [INFO] Booting worker with pid: 61541
+[2024-09-17 13:17:22 +0530] [61542] [INFO] Booting worker with pid: 61542
+[2024-09-17 13:17:22 +0530] [61543] [INFO] Booting worker with pid: 61543
+[2024-09-17 13:19:16 +0530] [61539] [INFO] Handling signal: int
+[2024-09-17 13:19:16 +0530] [61540] [INFO] Worker exiting (pid: 61540)
+[2024-09-17 13:19:16 +0530] [61542] [INFO] Worker exiting (pid: 61542)
+[2024-09-17 13:19:16 +0530] [61541] [INFO] Worker exiting (pid: 61541)
+[2024-09-17 13:19:16 +0530] [61543] [INFO] Worker exiting (pid: 61543)
+[2024-09-17 13:19:16 +0530] [61539] [INFO] Shutting down: Master
+[2024-09-17 13:19:17 +0530] [61596] [INFO] Starting gunicorn 23.0.0
+[2024-09-17 13:19:17 +0530] [61596] [INFO] Listening at: http://0.0.0.0:5000 (61596)
+[2024-09-17 13:19:17 +0530] [61596] [INFO] Using worker: sync
+[2024-09-17 13:19:17 +0530] [61597] [INFO] Booting worker with pid: 61597
+[2024-09-17 13:19:17 +0530] [61598] [INFO] Booting worker with pid: 61598
+[2024-09-17 13:19:17 +0530] [61599] [INFO] Booting worker with pid: 61599
+[2024-09-17 13:19:17 +0530] [61600] [INFO] Booting worker with pid: 61600
+[2024-09-17 13:19:25 +0530] [61596] [CRITICAL] WORKER TIMEOUT (pid:61599)
+[2024-09-17 13:19:25 +0530] [61599] [ERROR] Error handling request /complex-api
+Traceback (most recent call last):
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 21, in complex_api
+    time.sleep(10) # -- simulate time taken process
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-17 13:19:25 +0530] [61599] [INFO] Worker exiting (pid: 61599)
+[2024-09-17 13:19:25 +0530] [61607] [INFO] Booting worker with pid: 61607
+[2024-09-17 13:26:15 +0530] [61596] [INFO] Handling signal: int
+[2024-09-17 13:26:15 +0530] [61597] [INFO] Worker exiting (pid: 61597)
+[2024-09-17 13:26:15 +0530] [61598] [INFO] Worker exiting (pid: 61598)
+[2024-09-17 13:26:15 +0530] [61607] [INFO] Worker exiting (pid: 61607)
+[2024-09-17 13:26:15 +0530] [61600] [INFO] Worker exiting (pid: 61600)
+[2024-09-17 13:26:15 +0530] [61596] [INFO] Shutting down: Master
+[2024-09-17 13:26:16 +0530] [61765] [INFO] Starting gunicorn 23.0.0
+[2024-09-17 13:26:16 +0530] [61765] [INFO] Listening at: http://0.0.0.0:5000 (61765)
+[2024-09-17 13:26:16 +0530] [61765] [INFO] Using worker: sync
+[2024-09-17 13:26:16 +0530] [61766] [INFO] Booting worker with pid: 61766
+[2024-09-17 13:26:16 +0530] [61767] [INFO] Booting worker with pid: 61767
+[2024-09-17 13:26:16 +0530] [61768] [INFO] Booting worker with pid: 61768
+[2024-09-17 13:26:16 +0530] [61769] [INFO] Booting worker with pid: 61769
+[2024-09-17 13:26:25 +0530] [61765] [CRITICAL] WORKER TIMEOUT (pid:61766)
+[2024-09-17 13:26:25 +0530] [61766] [ERROR] Error handling request /complex-api
+Traceback (most recent call last):
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 10, in inner
+    result=func(*args,**kwargs)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 25, in complex_api
+    time.sleep(10) # -- simulate time taken process
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-17 13:26:25 +0530] [61766] [INFO] Worker exiting (pid: 61766)
+[2024-09-17 13:26:25 +0530] [61772] [INFO] Booting worker with pid: 61772
+[2024-09-17 13:26:52 +0530] [61765] [INFO] Handling signal: int
+[2024-09-17 13:26:52 +0530] [61768] [INFO] Worker exiting (pid: 61768)
+[2024-09-17 13:26:52 +0530] [61767] [INFO] Worker exiting (pid: 61767)
+[2024-09-17 13:26:52 +0530] [61772] [INFO] Worker exiting (pid: 61772)
+[2024-09-17 13:26:52 +0530] [61769] [INFO] Worker exiting (pid: 61769)
+[2024-09-17 13:26:52 +0530] [61765] [INFO] Shutting down: Master
+[2024-09-17 13:26:54 +0530] [61791] [INFO] Starting gunicorn 23.0.0
+[2024-09-17 13:26:54 +0530] [61791] [INFO] Listening at: http://0.0.0.0:5000 (61791)
+[2024-09-17 13:26:54 +0530] [61791] [INFO] Using worker: sync
+[2024-09-17 13:26:54 +0530] [61792] [INFO] Booting worker with pid: 61792
+[2024-09-17 13:26:54 +0530] [61793] [INFO] Booting worker with pid: 61793
+[2024-09-17 13:26:54 +0530] [61794] [INFO] Booting worker with pid: 61794
+[2024-09-17 13:26:54 +0530] [61795] [INFO] Booting worker with pid: 61795
+[2024-09-17 13:27:04 +0530] [61791] [CRITICAL] WORKER TIMEOUT (pid:61793)
+[2024-09-17 13:27:04 +0530] [61793] [ERROR] Error handling request /complex-api
+Traceback (most recent call last):
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 10, in inner
+    result=func(*args,**kwargs)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 25, in complex_api
+    time.sleep(10) # -- simulate time taken process
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-17 13:27:04 +0530] [61793] [INFO] Worker exiting (pid: 61793)
+[2024-09-17 13:27:04 +0530] [61807] [INFO] Booting worker with pid: 61807
+[2024-09-17 13:27:46 +0530] [61791] [INFO] Handling signal: int
+[2024-09-17 13:27:46 +0530] [61795] [INFO] Worker exiting (pid: 61795)
+[2024-09-17 13:27:46 +0530] [61794] [INFO] Worker exiting (pid: 61794)
+[2024-09-17 13:27:46 +0530] [61792] [INFO] Worker exiting (pid: 61792)
+[2024-09-17 13:27:46 +0530] [61807] [INFO] Worker exiting (pid: 61807)
+[2024-09-17 13:27:47 +0530] [61791] [INFO] Shutting down: Master
+[2024-09-17 13:27:47 +0530] [61832] [INFO] Starting gunicorn 23.0.0
+[2024-09-17 13:27:47 +0530] [61832] [INFO] Listening at: http://0.0.0.0:5000 (61832)
+[2024-09-17 13:27:47 +0530] [61832] [INFO] Using worker: sync
+[2024-09-17 13:27:47 +0530] [61833] [INFO] Booting worker with pid: 61833
+[2024-09-17 13:27:47 +0530] [61834] [INFO] Booting worker with pid: 61834
+[2024-09-17 13:27:47 +0530] [61835] [INFO] Booting worker with pid: 61835
+[2024-09-17 13:27:47 +0530] [61836] [INFO] Booting worker with pid: 61836
+[2024-09-17 13:27:57 +0530] [61832] [CRITICAL] WORKER TIMEOUT (pid:61833)
+[2024-09-17 13:27:57 +0530] [61833] [ERROR] Error handling request /complex-api
+Traceback (most recent call last):
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 10, in inner
+    result=func(*args,**kwargs)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 30, in complex_api
+    time.sleep(10) # -- simulate time taken process
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-17 13:27:57 +0530] [61833] [INFO] Worker exiting (pid: 61833)
+[2024-09-17 13:27:58 +0530] [61840] [INFO] Booting worker with pid: 61840
+[2024-09-17 13:37:36 +0530] [61832] [INFO] Handling signal: int
+[2024-09-17 13:37:36 +0530] [61835] [INFO] Worker exiting (pid: 61835)
+[2024-09-17 13:37:36 +0530] [61834] [INFO] Worker exiting (pid: 61834)
+[2024-09-17 13:37:36 +0530] [61836] [INFO] Worker exiting (pid: 61836)
+[2024-09-17 13:37:36 +0530] [61840] [INFO] Worker exiting (pid: 61840)
+[2024-09-17 13:37:36 +0530] [61832] [INFO] Shutting down: Master
+[2024-09-17 13:37:37 +0530] [61985] [INFO] Starting gunicorn 23.0.0
+[2024-09-17 13:37:37 +0530] [61985] [INFO] Listening at: http://0.0.0.0:5000 (61985)
+[2024-09-17 13:37:37 +0530] [61985] [INFO] Using worker: sync
+[2024-09-17 13:37:37 +0530] [61986] [INFO] Booting worker with pid: 61986
+[2024-09-17 13:37:37 +0530] [61987] [INFO] Booting worker with pid: 61987
+[2024-09-17 13:37:37 +0530] [61988] [INFO] Booting worker with pid: 61988
+[2024-09-17 13:37:37 +0530] [61989] [INFO] Booting worker with pid: 61989
+[2024-09-17 13:37:47 +0530] [61985] [CRITICAL] WORKER TIMEOUT (pid:61987)
+[2024-09-17 13:37:47 +0530] [61987] [ERROR] Error handling request /complex-api
+Traceback (most recent call last):
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 13, in complex_api
+    time.sleep(10) # -- simulate time taken process
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-09-17 13:37:47 +0530] [61987] [INFO] Worker exiting (pid: 61987)
+[2024-09-17 13:37:47 +0530] [61993] [INFO] Booting worker with pid: 61993
+[2024-09-18 20:53:09 +0530] [61985] [ERROR] Worker (pid:61986) was sent SIGHUP!
+[2024-09-18 20:53:09 +0530] [61985] [ERROR] Worker (pid:61988) was sent SIGHUP!
+[2024-09-18 20:53:09 +0530] [61985] [ERROR] Worker (pid:61989) was sent SIGHUP!
+[2024-09-18 20:53:09 +0530] [61985] [ERROR] Worker (pid:61993) was sent SIGHUP!
+[2024-09-18 20:53:10 +0530] [65070] [INFO] Booting worker with pid: 65070
+[2024-09-18 20:53:10 +0530] [65072] [INFO] Booting worker with pid: 65072
+[2024-09-18 20:53:10 +0530] [65074] [INFO] Booting worker with pid: 65074
+[2024-09-18 20:53:10 +0530] [65075] [INFO] Booting worker with pid: 65075
+[2024-09-18 20:53:10 +0530] [61985] [INFO] Handling signal: hup
+[2024-09-18 20:53:10 +0530] [61985] [INFO] Hang up: Master
+[2024-09-18 20:53:10 +0530] [65076] [INFO] Booting worker with pid: 65076
+[2024-09-18 20:53:10 +0530] [65077] [INFO] Booting worker with pid: 65077
+[2024-09-18 20:53:10 +0530] [65070] [INFO] Worker exiting (pid: 65070)
+[2024-09-18 20:53:10 +0530] [65079] [INFO] Booting worker with pid: 65079
+[2024-09-18 20:53:10 +0530] [65072] [INFO] Worker exiting (pid: 65072)
+[2024-09-18 20:53:10 +0530] [65078] [INFO] Booting worker with pid: 65078
+[2024-09-18 20:53:10 +0530] [65074] [INFO] Worker exiting (pid: 65074)
+[2024-09-18 20:53:10 +0530] [65075] [INFO] Worker exiting (pid: 65075)
+[2024-09-18 20:53:10 +0530] [61985] [ERROR] Worker (pid:65070) was sent SIGTERM!
+[2024-09-18 20:53:10 +0530] [61985] [ERROR] Worker (pid:65072) was sent SIGTERM!
+[2024-09-18 20:53:10 +0530] [61985] [ERROR] Worker (pid:65074) was sent SIGTERM!
+[2024-09-18 20:53:10 +0530] [61985] [ERROR] Worker (pid:65075) was sent SIGTERM!
+[2024-10-05 19:39:40 +0530] [6381] [INFO] Starting gunicorn 23.0.0
+[2024-10-05 19:39:40 +0530] [6381] [INFO] Listening at: http://0.0.0.0:5000 (6381)
+[2024-10-05 19:39:40 +0530] [6381] [INFO] Using worker: sync
+[2024-10-05 19:39:40 +0530] [6382] [INFO] Booting worker with pid: 6382
+[2024-10-05 19:39:40 +0530] [6383] [INFO] Booting worker with pid: 6383
+[2024-10-05 19:39:40 +0530] [6385] [INFO] Booting worker with pid: 6385
+[2024-10-05 19:39:40 +0530] [6386] [INFO] Booting worker with pid: 6386
+[2024-10-05 19:39:54 +0530] [6381] [CRITICAL] WORKER TIMEOUT (pid:6383)
+[2024-10-05 19:39:54 +0530] [6383] [ERROR] Error handling request /complex-api
+Traceback (most recent call last):
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 13, in complex_api
+    time.sleep(10) # -- simulate time taken process
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-05 19:39:54 +0530] [6383] [INFO] Worker exiting (pid: 6383)
+[2024-10-05 19:39:54 +0530] [6400] [INFO] Booting worker with pid: 6400
+[2024-10-05 19:40:11 +0530] [6381] [INFO] Handling signal: int
+[2024-10-05 19:40:11 +0530] [6382] [INFO] Worker exiting (pid: 6382)
+[2024-10-05 19:40:11 +0530] [6381] [INFO] Shutting down: Master
+[2024-10-05 19:40:13 +0530] [6425] [INFO] Starting gunicorn 23.0.0
+[2024-10-05 19:40:13 +0530] [6425] [INFO] Listening at: http://0.0.0.0:5000 (6425)
+[2024-10-05 19:40:13 +0530] [6425] [INFO] Using worker: sync
+[2024-10-05 19:40:13 +0530] [6426] [INFO] Booting worker with pid: 6426
+[2024-10-05 19:40:13 +0530] [6427] [INFO] Booting worker with pid: 6427
+[2024-10-05 19:40:14 +0530] [6428] [INFO] Booting worker with pid: 6428
+[2024-10-05 19:40:14 +0530] [6429] [INFO] Booting worker with pid: 6429
+[2024-10-05 19:40:41 +0530] [6425] [INFO] Handling signal: int
+[2024-10-05 19:40:41 +0530] [6426] [INFO] Worker exiting (pid: 6426)
+[2024-10-05 19:40:41 +0530] [6428] [INFO] Worker exiting (pid: 6428)
+[2024-10-05 19:40:41 +0530] [6429] [INFO] Worker exiting (pid: 6429)
+[2024-10-05 19:40:41 +0530] [6427] [INFO] Worker exiting (pid: 6427)
+[2024-10-05 19:40:41 +0530] [6425] [INFO] Shutting down: Master
+[2024-10-05 19:40:43 +0530] [6461] [INFO] Starting gunicorn 23.0.0
+[2024-10-05 19:40:43 +0530] [6461] [INFO] Listening at: http://0.0.0.0:5000 (6461)
+[2024-10-05 19:40:43 +0530] [6461] [INFO] Using worker: sync
+[2024-10-05 19:40:43 +0530] [6463] [INFO] Booting worker with pid: 6463
+[2024-10-05 19:40:43 +0530] [6464] [INFO] Booting worker with pid: 6464
+[2024-10-05 19:40:43 +0530] [6465] [INFO] Booting worker with pid: 6465
+[2024-10-05 19:40:43 +0530] [6466] [INFO] Booting worker with pid: 6466
+[2024-10-05 19:40:50 +0530] [6461] [CRITICAL] WORKER TIMEOUT (pid:6463)
+[2024-10-05 19:40:50 +0530] [6463] [ERROR] Error handling request /complex-api
+Traceback (most recent call last):
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 134, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 177, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1498, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/main.py", line 13, in complex_api
+    time.sleep(10) # -- simulate time taken process
+  File "/home/utsav/Desktop/Personal_git/gunicorn-pythonapi/gpenv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2024-10-05 19:40:50 +0530] [6463] [INFO] Worker exiting (pid: 6463)
+[2024-10-05 19:40:50 +0530] [6470] [INFO] Booting worker with pid: 6470
+[2024-10-05 19:41:17 +0530] [6461] [INFO] Handling signal: int
+[2024-10-05 19:41:17 +0530] [6465] [INFO] Worker exiting (pid: 6465)
+[2024-10-05 19:41:17 +0530] [6466] [INFO] Worker exiting (pid: 6466)
+[2024-10-05 19:41:17 +0530] [6464] [INFO] Worker exiting (pid: 6464)
+[2024-10-05 19:41:17 +0530] [6470] [INFO] Worker exiting (pid: 6470)
+[2024-10-05 19:41:17 +0530] [6461] [INFO] Shutting down: Master
