@@ -1,0 +1,36 @@
+RUN POSTGRESS INTO DOCKER:
+docker run --name utsav_postgress -v /var/www/my-micro-service/docker-db:/var/lib/postgresql/data -p 2000:5432 -e POSTGRES_PASSWORD=root -d postgres
+
+create database utsav;
+
+---------UNDER DB utsav--------------
+
+create schema utsav;
+
+create table utsav.user(
+	id serial primary key,
+	name varchar(100),
+	email varchar(100),
+	password text
+);
+
+create table utsav.product(
+	id serial primary key,
+	name varchar(100),
+	price DECIMAL(5, 2)
+);
+
+------ USER & PERMISSIONS ---------
+
+CREATE USER auth_service WITH PASSWORD 'auth_passd';
+CREATE USER product_service WITH PASSWORD 'product_passd';
+
+GRANT CONNECT ON DATABASE utsav TO auth_service;
+GRANT USAGE ON SCHEMA utsav TO auth_service;
+GRANT SELECT, INSERT ON TABLE utsav.user TO auth_service;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA utsav TO auth_service;
+
+GRANT CONNECT ON DATABASE utsav TO product_service;
+GRANT USAGE ON SCHEMA utsav TO product_service;
+GRANT SELECT, INSERT, UPDATE, DELETE ON TABLE utsav.product TO product_service;
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA utsav TO product_service;

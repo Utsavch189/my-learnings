@@ -1,0 +1,66 @@
+version: '3.3'
+services:
+
+  auth_application:
+    build:
+      context: ./auth_service
+      dockerfile: ./Dockerfile.auth_service
+    ports:
+      - '5000:5000'
+    volumes:
+      - /var/www/my-micro-service/logs:/app/logs
+    image: auth_service
+    restart: always
+    container_name: auth_service_container
+    networks:
+      - micro_service_net
+    environment:
+      ENV: prod
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: "512M"
+  
+  product_application:
+    build:
+      context: ./product_service
+      dockerfile: ./Dockerfile.product_service
+    ports:
+      - '8000:8000'
+    volumes:
+      - /var/www/my-micro-service/logs:/app/logs
+    image: product_service
+    restart: always
+    container_name: product_service_container
+    networks:
+      - micro_service_net
+    environment:
+      ENV: prod
+    deploy:
+      resources:
+        limits:
+          cpus: "0.50"
+          memory: "512M"
+  
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - '2000:5432'
+    volumes:
+      - /var/www/my-micro-service/docker-db:/var/lib/postgresql/data
+    container_name: db_container
+    networks:
+      - micro_service_net
+    environment:
+      POSTGRES_PASSWORD: root
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: "1G"
+
+networks:
+  micro_service_net:
+    external: true

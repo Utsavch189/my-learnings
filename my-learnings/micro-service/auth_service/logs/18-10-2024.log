@@ -1,0 +1,119 @@
+2024-10-18 18:39:56,286 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 18:39:56,286 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-18 18:39:56,287 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:39:56,479 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:39:56,479 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:42:38,903 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 26,
+    "func": "add_user",
+    "exception_type": "<class 'psycopg2.errors.UniqueViolation'>",
+    "exception": "duplicate key value violates unique constraint \"unique_email\"\nDETAIL:  Key (email)=(abc.com) already exists.\n"
+}
+2024-10-18 18:42:38,903 - root - ERROR - add_user() | UniqueViolation('duplicate key value violates unique constraint "unique_email"\nDETAIL:  Key (email)=(abc.com) already exists.\n')
+2024-10-18 18:42:38,903 - root - ERROR - register() | Exception('duplicate key value violates unique constraint "unique_email"\nDETAIL:  Key (email)=(abc.com) already exists.\n')
+2024-10-18 18:42:38,904 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:42:38] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-10-18 18:44:06,662 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py', reloading
+2024-10-18 18:44:06,726 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:44:06,921 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:44:06,921 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:44:57,163 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/service/register_service.py', reloading
+2024-10-18 18:44:57,228 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:44:57,430 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:44:57,430 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:46:22,850 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py', reloading
+2024-10-18 18:46:22,907 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:46:23,089 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:46:23,089 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:46:30,131 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 18:46:30,131 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-18 18:46:30,132 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:46:30,311 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:46:30,311 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:46:33,052 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 26,
+    "func": "add_user",
+    "exception_type": "<class 'psycopg2.errors.UniqueViolation'>",
+    "exception": "duplicate key value violates unique constraint \"unique_email\"\nDETAIL:  Key (email)=(abc.com) already exists.\n"
+}
+2024-10-18 18:46:33,053 - root - ERROR - add_user() | UniqueViolation('duplicate key value violates unique constraint "unique_email"\nDETAIL:  Key (email)=(abc.com) already exists.\n')
+2024-10-18 18:46:33,053 - root - ERROR - register() | Exception('something is wrong!')
+2024-10-18 18:46:33,053 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:46:33] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-10-18 18:48:20,846 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/db/transaction.py', reloading
+2024-10-18 18:48:20,906 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:48:21,095 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:48:21,096 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:49:11,340 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/service/register_service.py', reloading
+2024-10-18 18:49:11,399 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:49:11,595 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:49:11,596 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:49:13,078 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 26,
+    "func": "add_user",
+    "exception_type": "<class 'psycopg2.errors.UniqueViolation'>",
+    "exception": "duplicate key value violates unique constraint \"unique_email\"\nDETAIL:  Key (email)=(abc.com) already exists.\n"
+}
+2024-10-18 18:49:13,078 - root - ERROR - add_user() | AttributeError("'Transaction' object has no attribute 'handel_exception_silently'")
+2024-10-18 18:49:13,078 - root - ERROR - register() | Exception('something is wrong in registration!')
+2024-10-18 18:49:13,079 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:49:13] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-10-18 18:49:22,542 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 18:49:22,543 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-18 18:49:22,543 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:49:22,735 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:49:22,736 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:49:24,830 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 26,
+    "func": "add_user",
+    "exception_type": "<class 'psycopg2.errors.UniqueViolation'>",
+    "exception": "duplicate key value violates unique constraint \"unique_email\"\nDETAIL:  Key (email)=(abc.com) already exists.\n"
+}
+2024-10-18 18:49:24,830 - root - ERROR - add_user() | AttributeError("'Transaction' object has no attribute 'handel_exception_silently'")
+2024-10-18 18:49:24,830 - root - ERROR - register() | Exception('something is wrong in registration!')
+2024-10-18 18:49:24,831 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:49:24] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-10-18 18:50:12,525 - root - ERROR - get_a_user() | AttributeError("'Transaction' object has no attribute 'handel_exception_silently'")
+2024-10-18 18:50:12,525 - root - ERROR - login() | Exception('error in get a user')
+2024-10-18 18:50:12,526 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:50:12] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-10-18 18:50:56,185 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py', reloading
+2024-10-18 18:50:56,233 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:50:56,419 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:50:56,419 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:50:57,930 - root - ERROR - get_a_user() | AttributeError("'Transaction' object has no attribute 'handel_exception_silently'")
+2024-10-18 18:50:57,930 - root - ERROR - login() | Exception('error in get a user')
+2024-10-18 18:50:57,930 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:50:57] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-10-18 18:51:01,919 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 18:51:01,919 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-18 18:51:01,920 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:51:02,103 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:51:02,104 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:51:03,278 - root - ERROR - get_a_user() | AttributeError("'Transaction' object has no attribute 'handel_exception_silently'")
+2024-10-18 18:51:03,278 - root - ERROR - login() | Exception('error in get a user')
+2024-10-18 18:51:03,279 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:51:03] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-10-18 18:51:36,272 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/db/transaction.py', reloading
+2024-10-18 18:51:36,337 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 18:51:36,510 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 18:51:36,510 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 18:51:38,793 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:51:38] "POST /login HTTP/1.1" 200 -
+2024-10-18 18:51:42,676 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:51:42] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-10-18 18:51:44,089 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:51:44] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-10-18 18:51:44,578 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:51:44] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-10-18 18:51:49,227 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:51:49] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-10-18 18:51:50,890 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:51:50] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-10-18 18:51:55,556 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 18:51:55] "POST /login HTTP/1.1" 200 -
+2024-10-18 19:45:17,888 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/dev.py', reloading
+2024-10-18 19:45:17,954 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 19:45:18,154 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 19:45:18,154 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 19:45:36,497 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-18 19:45:36,498 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-18 19:45:36,498 - werkzeug - INFO -  * Restarting with stat
+2024-10-18 19:45:36,681 - werkzeug - WARNING -  * Debugger is active!
+2024-10-18 19:45:36,682 - werkzeug - INFO -  * Debugger PIN: 373-489-748
+2024-10-18 20:07:08,869 - werkzeug - INFO - 127.0.0.1 - - [18/Oct/2024 20:07:08] "POST /login HTTP/1.1" 200 -

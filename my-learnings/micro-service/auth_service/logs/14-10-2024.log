@@ -1,0 +1,54 @@
+2024-10-14 21:55:36,367 - werkzeug - INFO -  * Restarting with stat
+2024-10-14 21:55:36,596 - werkzeug - WARNING -  * Debugger is active!
+2024-10-14 21:55:36,597 - werkzeug - INFO -  * Debugger PIN: 211-549-256
+2024-10-14 21:55:49,664 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/service/register_service.py', reloading
+2024-10-14 21:55:49,732 - werkzeug - INFO -  * Restarting with stat
+2024-10-14 21:55:49,930 - werkzeug - WARNING -  * Debugger is active!
+2024-10-14 21:55:49,931 - werkzeug - INFO -  * Debugger PIN: 211-549-256
+2024-10-14 21:57:07,294 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py', reloading
+2024-10-14 21:57:07,342 - werkzeug - INFO -  * Restarting with stat
+2024-10-14 21:57:07,502 - werkzeug - WARNING -  * Debugger is active!
+2024-10-14 21:57:07,502 - werkzeug - INFO -  * Debugger PIN: 211-549-256
+2024-10-14 21:57:24,606 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 26,
+    "func": "add_user",
+    "exception_type": "<class 'psycopg2.errors.InsufficientPrivilege'>",
+    "exception": "permission denied for sequence user_id_seq\n"
+}
+2024-10-14 21:57:24,607 - root - ERROR - add_user() | InsufficientPrivilege('permission denied for sequence user_id_seq\n')
+2024-10-14 21:57:24,607 - root - ERROR - register() | Exception('permission denied for sequence user_id_seq\n')
+2024-10-14 21:57:24,607 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:57:24] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-10-14 21:58:58,432 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 26,
+    "func": "add_user",
+    "exception_type": "<class 'psycopg2.errors.UniqueViolation'>",
+    "exception": "duplicate key value violates unique constraint \"user_pkey\"\nDETAIL:  Key (id)=(1) already exists.\n"
+}
+2024-10-14 21:58:58,432 - root - ERROR - add_user() | UniqueViolation('duplicate key value violates unique constraint "user_pkey"\nDETAIL:  Key (id)=(1) already exists.\n')
+2024-10-14 21:58:58,433 - root - ERROR - register() | Exception('duplicate key value violates unique constraint "user_pkey"\nDETAIL:  Key (id)=(1) already exists.\n')
+2024-10-14 21:58:58,433 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:58:58] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-10-14 21:59:52,970 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:59:52] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+2024-10-14 21:59:57,620 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:59:57] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+2024-10-14 22:02:30,557 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 22:02:30] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+2024-10-14 22:02:32,923 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 26,
+    "func": "add_user",
+    "exception_type": "<class 'psycopg2.errors.UniqueViolation'>",
+    "exception": "duplicate key value violates unique constraint \"unique_email\"\nDETAIL:  Key (email)=(abc.com) already exists.\n"
+}
+2024-10-14 22:02:32,924 - root - ERROR - add_user() | UniqueViolation('duplicate key value violates unique constraint "unique_email"\nDETAIL:  Key (email)=(abc.com) already exists.\n')
+2024-10-14 22:02:32,924 - root - ERROR - register() | Exception('duplicate key value violates unique constraint "unique_email"\nDETAIL:  Key (email)=(abc.com) already exists.\n')
+2024-10-14 22:02:32,925 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 22:02:32] "[35m[1mPOST /register HTTP/1.1[0m" 500 -
+2024-10-14 22:02:47,767 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 26,
+    "func": "add_user",
+    "exception_type": "<class 'psycopg2.errors.UniqueViolation'>",
+    "exception": "duplicate key value violates unique constraint \"unique_email\"\nDETAIL:  Key (email)=(abc.com) already exists.\n"
+}
+2024-10-14 22:02:47,767 - root - ERROR - add_user() | UniqueViolation('duplicate key value violates unique constraint "unique_email"\nDETAIL:  Key (email)=(abc.com) already exists.\n')
+2024-10-14 22:02:47,767 - root - ERROR - register() | Exception('duplicate key value violates unique constraint "unique_email"\nDETAIL:  Key (email)=(abc.com) already exists.\n')
+2024-10-14 22:02:47,768 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 22:02:47] "[35m[1mPOST /register HTTP/1.1[0m" 500 -

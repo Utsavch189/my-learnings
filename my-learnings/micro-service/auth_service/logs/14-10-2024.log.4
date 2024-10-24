@@ -1,0 +1,62 @@
+2024-10-14 21:33:53,740 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-14 21:33:53,740 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2024-10-14 21:33:53,740 - werkzeug - INFO -  * Restarting with stat
+2024-10-14 21:33:53,928 - werkzeug - WARNING -  * Debugger is active!
+2024-10-14 21:33:53,929 - werkzeug - INFO -  * Debugger PIN: 211-549-256
+2024-10-14 21:34:03,624 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:34:03] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-10-14 21:34:35,312 - root - ERROR - add_user() | AttributeError('__enter__')
+2024-10-14 21:34:35,312 - root - ERROR - login() | Exception('__enter__')
+2024-10-14 21:34:35,313 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:34:35] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-10-14 21:34:36,359 - root - ERROR - add_user() | AttributeError('__enter__')
+2024-10-14 21:34:36,359 - root - ERROR - login() | Exception('__enter__')
+2024-10-14 21:34:36,360 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:34:36] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-10-14 21:35:06,271 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py', reloading
+2024-10-14 21:35:06,328 - werkzeug - INFO -  * Restarting with stat
+2024-10-14 21:35:06,517 - werkzeug - WARNING -  * Debugger is active!
+2024-10-14 21:35:06,517 - werkzeug - INFO -  * Debugger PIN: 211-549-256
+2024-10-14 21:35:10,540 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py', reloading
+2024-10-14 21:35:10,600 - werkzeug - INFO -  * Restarting with stat
+2024-10-14 21:35:10,795 - werkzeug - WARNING -  * Debugger is active!
+2024-10-14 21:35:10,796 - werkzeug - INFO -  * Debugger PIN: 211-549-256
+2024-10-14 21:35:12,174 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 9,
+    "func": "get_a_user",
+    "exception_type": "<class 'psycopg2.errors.InsufficientPrivilege'>",
+    "exception": "permission denied for schema utsav\nLINE 1: SELECT * FROM utsav.user where email='abc.com'\n                      ^\n"
+}
+2024-10-14 21:35:12,175 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:35:12] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-10-14 21:35:40,270 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 9,
+    "func": "get_a_user",
+    "exception_type": "<class 'psycopg2.errors.InsufficientPrivilege'>",
+    "exception": "permission denied for schema utsav\nLINE 1: SELECT * FROM utsav.user where email='abc.com'\n                      ^\n"
+}
+2024-10-14 21:35:40,271 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:35:40] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-10-14 21:37:19,354 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 12,
+    "func": "get_a_user",
+    "exception_type": "<class 'TypeError'>",
+    "exception": "'NoneType' object is not subscriptable"
+}
+2024-10-14 21:37:19,355 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:37:19] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-10-14 21:37:26,988 - root - ERROR - {
+    "file": "/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py",
+    "line": 12,
+    "func": "get_a_user",
+    "exception_type": "<class 'TypeError'>",
+    "exception": "'NoneType' object is not subscriptable"
+}
+2024-10-14 21:37:26,988 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:37:26] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-10-14 21:38:22,719 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/controller/main.py', reloading
+2024-10-14 21:38:22,781 - werkzeug - INFO -  * Restarting with stat
+2024-10-14 21:38:22,979 - werkzeug - WARNING -  * Debugger is active!
+2024-10-14 21:38:22,979 - werkzeug - INFO -  * Debugger PIN: 211-549-256
+2024-10-14 21:38:24,653 - werkzeug - INFO - 127.0.0.1 - - [14/Oct/2024 21:38:24] "[31m[1mPOST /login HTTP/1.1[0m" 400 -
+2024-10-14 21:42:21,120 - werkzeug - INFO -  * Detected change in '/media/utsav/77f97bd8-cb4e-4891-9e00-a700efef6596/Personal_git/my-learnings/my-learnings/micro-service/auth_service/app/router/register_router.py', reloading
+2024-10-14 21:42:21,182 - werkzeug - INFO -  * Restarting with stat
+2024-10-14 21:42:21,370 - werkzeug - WARNING -  * Debugger is active!
+2024-10-14 21:42:21,370 - werkzeug - INFO -  * Debugger PIN: 211-549-256
